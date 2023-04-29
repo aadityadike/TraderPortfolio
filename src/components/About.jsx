@@ -1,52 +1,37 @@
-import React from "react";
+import { AiFillStar } from 'react-icons/ai'
 
-function About(){
-    return(
-            <section className="about">
-                <div className="container">
-                    {/* Heading */}
-                    <h1 className="text-4xl text-center text-slate-500 font-bold my-10">About Us</h1>
-                    {/* Cards */}
-                    {/* First */}
-                    <div className="item flex gap-10">
-                        <div className="left">
-                            <img className="rounded object-cover h-full w-full" src="src\assets\about1.jpg" alt="cover1" />
-                        </div> 
-                        <div className="right w-1/2">
-                            <h4 className="text-center text-xl font-medium mb-6">Planning Future</h4>
-                            <p className="text-center">We have years of experience helping clients prepare for the unknown while meeting their financial goals. Ask us about</p>
-                            <ol className="list-disc pl-8">
-                                <li>Financial Planning</li>
-                                <li>Investment Advice</li>
-                                <li>Retirement Planning</li>
-                                <li>Education Funding</li>
-                                <li>Estate Planning</li>
-                            </ol>
-                            <p>As an independent financial services firm, we can access many different products so you can get the right products and services for you.</p>
-                        </div>
-                    </div>
-                    {/* Second */}
-                    <div className="item flex gap-10 justify-center items-center">
-                        <div className="left w-1/2">
-                            <h4 className="text-center text-xl font-medium mb-6">Comprehensive Approach</h4>
-                            <p className="text-center">We use proven finance strategies designed to meet your risk tolerance and stand up against market volatility. And you can count on unbiased recommendations and impartial guidance based directly on your needs and goals.</p>
-                        </div>
-                        <div className="right">
-                            <img className="rounded object-cover h-full w-full" src="src\assets\about2.webp" alt="cover1" />
-                        </div> 
-                    </div>
-                    {/* Third */}
-                    <div className="item flex gap-10">
-                        <div className="left">
-                            <img className="rounded object-cover h-full w-full" src="src\assets\about3.jpg" alt="cover1" />
-                        </div> 
-                        <div className="right w-1/2">
-                            <h4 className="text-center text-xl font-medium mb-6">Committed to Service</h4>
-                            <p className="text-center">Every successful financial strategy starts with an excellent client relationship. Our mission and values include exceeding our client's every expectation. Call us today to find out how we can suggest long- and short-term strategies that will help you realize your financial dreams.</p>
-                        </div>
-                    </div>
+function About() {
+    return (
+        <section className="h-screen mt-10 px-5">
+            <div className="flex justify-center pb-10">
+                <h1 className="font-bold text-4xl text-neutral-900">About us</h1>
+            </div>
+            <div className="flex justify-center items-center gap-5">
+                <div className="flex-1 min-h-fit">
+                    <img src="src/assets/photo.gif" alt="gif" />
                 </div>
-            </section>
+                <div className="flex-1 px-4 font-semibold text-base leading-8">
+                    <ul className="flex flex-col gap-4">
+                        <li>
+                            {<AiFillStar style={{ display: 'inline', color: '#131313', margin: '8px', width: '20px', height: '22px' }} />}
+                            We believe that, Every trade is an opportunity to learn, grow, and achieve your financial dreams.
+                        </li>
+                        <li>
+                            {<AiFillStar style={{ display: 'inline', color: '#131313', margin: '8px', width: '20px', height: '22px' }} />}
+                            Our trading course is designed to cater to both beginners and advanced traders, covering all aspects of trading from the basics to advanced strategies.
+                        </li>
+                        <li>
+                            {<AiFillStar style={{ display: 'inline', color: '#131313', margin: '8px', width: '20px', height: '22px' }} />}
+                            Our trading platform is intuitive and user-friendly, making it easy to navigate even for those with little to no prior experience.
+                        </li>
+                        <li>
+                            {<AiFillStar style={{ display: 'inline', color: '#131313', margin: '8px', width: '20px', height: '22px' }} />}
+                            Our team of experienced traders is available 24/7 to answer any questions you may have and provide guidance when needed. We're committed to helping our clients succeed, and we'll do everything we can to help you achieve your goals.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     )
 }
 export default About;

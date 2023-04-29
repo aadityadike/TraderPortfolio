@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/header';
+import Navbar from './components/Navbar';
 import Cover from './components/Cover';
 import About from './components/About';
 
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
       <Cover />
       <About />
     </>

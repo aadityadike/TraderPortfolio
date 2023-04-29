@@ -1,18 +1,20 @@
-import React from "react";
-
-function Cover(){
-    return(
-            <section className="showcase bg-black">
-                <div className="flex justify-stretch items-center ">
-                    <div className="w-1/2">
-                        <img src="src\assets\cover1.jpg" alt="Cover" className="h-80 w-full object-cover" />
-                    </div>
-                    <div className="w-1/2 text-center text-white">
-                        <h4 className="uppercase font-semibold text-4xl whitespace-normal px-40 tracking-widest leading-10"> Make your future a success</h4>
-                        <p className="font-sm mt-8 text-gray-500 font-semibold text-lg">Plan Your tomorrow today!</p>
-                    </div>
-                </div>
-            </section>        
+function Cover() {
+    return (
+        <section className="h-screen text-white bg-neutral-900 ">
+            <div className="relative flex flex-col items-center justify-center top-32 gap-3">
+                <h1 className="text-5xl font-bold leading-relaxed">
+                    Maximize Your Earnings
+                </h1>
+                <h2 className="text-2xl font-semibold leading-relaxed">
+                    Join the Trading Revolution Now!
+                </h2>
+            </div>
+            <div className="relative flex flex-col items-center justify-center top-32">
+                <p className="text-xl font-normal leading-relaxed">
+                    Join our trading community and gain access to exclusive tips and strategies that will take your profits to the next level.
+                </p>
+            </div >
+        </section >
     )
 }
 export default Cover;
